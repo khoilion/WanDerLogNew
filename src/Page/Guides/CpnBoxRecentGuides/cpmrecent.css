@@ -1,0 +1,80 @@
+.border__radius__8 {
+    border-radius: 8px;
+}
+
+.color__elm {
+    color: #f75940;
+}
+
+.card__ :hover .box__img {
+    transform: scale(1.1);
+}
+
+.box__img {
+    transition: .3s;
+}
+
+.card__ {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.card__title {
+    color: #212529;
+    display: block;
+    font-size: 18px;
+}
+
+.card__title:hover {
+    color: #495057;
+    text-decoration: none;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.Bubble__size__sm {
+    border-radius: 13px;
+    height: 26px;
+    min-width: 26px;
+    width: 26px;
+}
+.card__img {
+    position: relative;
+}
+.more {
+    position: absolute;
+}
+/* ========================BtnSeemore================================ */
+.btn__seemore {
+    padding: 10px 64px;
+    color: #495057;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-width: 1px;
+    border-radius: 100px;
+    height: 56px;
+    min-width: 56px;
+    font-weight: 700;
+}
+
+.btn__seemore:hover {
+    background-color: #f3f4f5;
+    border-color: #dee2e6;
+    color: #495057;
+}

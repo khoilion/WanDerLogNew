@@ -1,0 +1,17 @@
+.fw-700{
+    font-weight: 700;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.letter-spacing-3 {
+    letter-spacing: -.03em;
+}
+.LandingPageFeatureTile__subheader{
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.size__FeaturesTools {
+    padding: 150px;
+}

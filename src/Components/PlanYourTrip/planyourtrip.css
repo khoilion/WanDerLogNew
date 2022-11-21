@@ -1,0 +1,47 @@
+.title-plan-trip {
+    padding: 120px 80px;
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.title-plan-trip h2 {
+    color: #2c365d !important;
+    font-weight: 700;
+    letter-spacing: -.03em;
+}
+
+.btn-start a {
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    color: #fff;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-start a:hover {
+    background-color: #de503a;
+    border-color: #de503a;
+    color: #fff;
+}
+
+.btn-app button {
+    border: none;
+    background: none;
+    color: #f75940;
+    background-color: #feefed;
+    border-color: #feefed;
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-app button:hover {
+    background-color: #fbaca0;
+    border-color: #fbaca0;
+    color: #f75940;
+}

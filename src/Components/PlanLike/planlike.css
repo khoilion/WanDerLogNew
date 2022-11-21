@@ -1,0 +1,32 @@
+.fs-36 {
+    font-size: 36px;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.size__planlike {
+    padding: 100px 0px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: -.03em;
+}
+
+.LandingPageSectionSubheading {
+    color: #6c757d;
+    font-size: 1.5rem;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    margin: 0px 133px;
+}
+
+a:hover {
+    color: #1828a4;
+    text-decoration: underline;
+}

@@ -1,0 +1,99 @@
+.banner {
+    position: relative;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.w-230 {
+    width: 230px;
+}
+
+.content__text__banner {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    width: 35%;
+    transform: translate(-50%, -50%);
+    color: #232322;
+    text-align: center;
+}
+
+.content__text__banner h1 {
+    font-size: 2.25rem;
+    letter-spacing: -.03em;
+    text-align: start;
+    font-weight: 700;
+    color: #2c365d !important;
+}
+
+.content__text__banner p {
+    font-size: 1.75rem;
+    letter-spacing: -.03em;
+    text-align: start;
+    color: #6C757D;
+}
+
+/* ========================================== */
+.box__show__gettheapp {
+    position: absolute;
+    left: -15%;
+    top: 15%;
+    background: #fff;
+    border-color: #dee2e6;
+    padding: 16px !important;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 18%);
+    text-align: left;
+}
+
+.box__show__gettheapp h3 {
+    font-size: 24px;
+    color: #212529;
+    font-weight: 400;
+    padding: 0px 0px 24px;
+}
+
+.qr__code {
+    height: 130px;
+    width: 100%;
+}
+
+.line__qr {
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #6c757d;
+    width: 1px;
+    height: 100%;
+    position: relative;
+}
+
+.line__ {
+    color: #6c757d !important;
+    position: absolute;
+    top: 35%;
+    left: -50%;
+    background: #fff;
+}
+
+.area__code {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.field__input__2 {
+    width: 95% !important;
+}
+
+.button__brand {
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    padding: 5px 0px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+}

@@ -1,0 +1,58 @@
+.ModalWrapper {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  overflow: auto;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ModalBody {
+  background-color: #fefefe;
+  margin: 2.75rem auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 24px;
+  position: relative;
+}
+
+.ModalBody span .icon-close-ac {
+  background-color: #f3f4f5;
+  border-color: #f3f4f5;
+  border-width: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.span {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.span:hover,
+:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title-ac {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: -.03em;
+}
+
+.text-line {
+  left: 40%;
+}
