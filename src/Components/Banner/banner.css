@@ -9,7 +9,10 @@
 .w-230 {
     width: 230px;
 }
-
+.banner__img {
+    position: absolute;
+    top: 0;
+}
 .content__text__banner {
     position: absolute;
     top: 50%;

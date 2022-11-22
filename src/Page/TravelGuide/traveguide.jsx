@@ -1,8 +1,10 @@
 import React from "react";
 import "./traveguide.css";
 import { Link } from "react-router-dom";
+import AutoComplete from "react-google-autocomplete";
 
 const TravelGuide = () => {
+  const [address, setAddess] = React.useState("");
   return (
     <>
       <div className="container">
@@ -16,14 +18,23 @@ const TravelGuide = () => {
               <label for="first-name" class="ha-screen-reader">
                 Where to ?
               </label>
-              <input
+              <AutoComplete
+                    style={{ width: "100%" }}
+                    
+                    apiKey="AIzaSyDMpLdwzRWo90pvohoMvrH9dinBcoy7mg4"
+                    onPlaceSelected={(place) => {
+                      console.log(place.formatted_address)
+                      setAddess(place.formatted_address)
+                    }}
+                />
+              {/* <input
                 id="first-name"
                 class="field__input"
                 placeholder="e.g. Paris, Hawaii, Japan"
-              />
-              <span class="field__label-wrap" aria-hidden="true">
+              /> */}
+              {/* <span class="field__label-wrap" aria-hidden="true">
                 <span class="field__label">Where to ?</span>
-              </span>
+              </span> */}
             </div>
           </div>
           <div className=" btn btn-start pt-4">

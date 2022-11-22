@@ -32,6 +32,10 @@
   height: 25px;
 }
 
+.ModalBody svg {
+  cursor: pointer;
+}
+
 .span {
   color: #aaaaaa;
   float: right;
@@ -55,4 +59,8 @@
 
 .text-line {
   left: 40%;
+}
+
+.dont-account {
+  cursor: pointer;
 }

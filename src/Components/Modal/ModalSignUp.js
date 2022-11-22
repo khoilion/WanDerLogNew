@@ -1,19 +1,58 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import { IoCloseSharp } from "react-icons/io5";
 import { CiFacebook } from "react-icons/ci";
 import { FcGoogle } from "react-icons/fc";
-import { AiOutlineApple } from "react-icons/ai";
-import { Link } from "react-router-dom";
-// import useToggle from '../useToggle'
-// import '../styles.css'
+import { auth } from "../../config/firebase-config";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 function OpenModal({ openSignUp, setOpenSignUp, setOpenLogin, toggle }) {
-  const [open, setOpen] = useState(false);
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handlerLoginEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlerLoginPassword = (e) => {
+    setPassword(e.target.value);
+  };
 
   const handlerLogin = () => {
     setOpenLogin();
     setOpenSignUp(false);
+  };
+
+  const onSubmit = () => {
+    if (!validateData()) {
+      return;
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((res) => {
+        const user = res.user;
+        console.log(user, "user");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  };
+
+  const validateData = () => {
+    if (email === "" || password === "") {
+      return alert("Please fill in all fields");
+    }
+    if (!validateEmail(email)) {
+      return alert("Please enter a valid email");
+    }
+    return true;
+  };
+
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
   };
 
   return (
@@ -49,23 +88,25 @@ function OpenModal({ openSignUp, setOpenSignUp, setOpenLogin, toggle }) {
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
+                  value={email}
                   aria-describedby="emailHelp"
                   placeholder="Email"
+                  onChange={handlerLoginEmail}
                 />
               </div>
               <div className="mb-3">
                 <input
                   type="password"
+                  value={password}
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
+                  onChange={handlerLoginPassword}
                 />
               </div>
               <div className="pt-3 text-center">
-                <button type="submit" className="btn">
-                  <Link className="box-login" to="/">
-                    Sign up with email
-                  </Link>
+                <button type="button" className="btn" onClick={onSubmit}>
+                  Sign up with email
                 </button>
               </div>
               <div>
