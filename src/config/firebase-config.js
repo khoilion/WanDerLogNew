@@ -28,3 +28,4 @@ const db = getFirestore(app);
 export default firebase;
 
 export { auth, db }
+
