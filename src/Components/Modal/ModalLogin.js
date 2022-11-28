@@ -9,6 +9,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
   const [email, setEmail] = useState("");
@@ -27,16 +28,15 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
     setOpenLogin(false);
   };
 
-  useEffect(() => {
-    auth.onAuthStateChanged(function (user) {
-      if (user) {
-        console.log(user);
-      } else {
-        console.log("no user");
-        // No user is signed in.
-      }
-    });
-  }, []);
+  // const auth = getAuth();
+  //   auth.onAuthStateChanged(function (user) {
+  //     if (user) {
+  //       console.log(user);
+  //     } else {
+  //       console.log("no user");
+  //       // No user is signed in.
+  //     }
+  //   });
 
   const onLoginWithEmailAndPass = () => {
     if (!validateData()) {
