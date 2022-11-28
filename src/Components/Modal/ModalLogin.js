@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import { CiFacebook } from "react-icons/ci";
 import "./style.css";
@@ -8,12 +8,12 @@ import { auth } from "../../config/firebase-config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
-import { getAuth } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handlerLoginEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -26,6 +26,17 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
     setOpenSignUp();
     setOpenLogin(false);
   };
+
+  useEffect(() => {
+    auth.onAuthStateChanged(function (user) {
+      if (user) {
+        console.log(user);
+      } else {
+        console.log("no user");
+        // No user is signed in.
+      }
+    });
+  }, []);
 
   const onLoginWithEmailAndPass = () => {
     if (!validateData()) {
@@ -95,12 +106,14 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
         const user = result.user;
         console.log(user);
         // ...
+        navigate("/guides");
       })
       .catch((error) => {
         const errorMessage = error.message;
         alert(errorMessage);
       });
   };
+
   return (
     <div>
       {openLogin && (

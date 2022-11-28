@@ -9,7 +9,9 @@ const TravelGuide = () => {
     <>
       <div className="container">
         <div className="text-center pt-5 pb-5 mt-5 mb-5">
-          <h1 className="fs-36 fw-700 letter-spacing-3">Write a travel guide</h1>
+          <h1 className="fs-36 fw-700 letter-spacing-3">
+            Write a travel guide
+          </h1>
           <p className="text-muted">
             Help fellow travelers by writing up your tips or a past itinerary.
           </p>
@@ -19,22 +21,13 @@ const TravelGuide = () => {
                 Where to ?
               </label>
               <AutoComplete
-                    style={{ width: "100%" }}
-                    
-                    apiKey="AIzaSyDMpLdwzRWo90pvohoMvrH9dinBcoy7mg4"
-                    onPlaceSelected={(place) => {
-                      console.log(place.formatted_address)
-                      setAddess(place.formatted_address)
-                    }}
-                />
-              {/* <input
-                id="first-name"
-                class="field__input"
-                placeholder="e.g. Paris, Hawaii, Japan"
-              /> */}
-              {/* <span class="field__label-wrap" aria-hidden="true">
-                <span class="field__label">Where to ?</span>
-              </span> */}
+                style={{ width: "100%" }}
+                apiKey="AIzaSyDMpLdwzRWo90pvohoMvrH9dinBcoy7mg4"
+                onPlaceSelected={(place) => {
+                  console.log(place.formatted_address);
+                  setAddess(place.formatted_address);
+                }}
+              />
             </div>
           </div>
           <div className=" btn btn-start pt-4">
