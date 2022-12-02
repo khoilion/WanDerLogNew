@@ -2,9 +2,25 @@ import React from "react";
 import "./traveguide.css";
 import { Link } from "react-router-dom";
 import AutoComplete from "react-google-autocomplete";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../config/firebase/firebase-config";
+import {useConnection} from "../../config/redux/connection/index";
 
 const TravelGuide = () => {
+  const {connection} = useConnection();
+  const { userInfo } = connection;
   const [address, setAddess] = React.useState("");
+
+  const onSave = async () => {
+    await addDoc(collection(db, "Tour"), {
+      address,
+      email: userInfo?.email,
+      displayName: userInfo?.displayName,
+      createdAt: new Date().getTime(),
+      updatedAt: new Date().getTime(),
+    });
+  }
+  
   return (
     <>
       <div className="container">
@@ -15,9 +31,9 @@ const TravelGuide = () => {
           <p className="text-muted">
             Help fellow travelers by writing up your tips or a past itinerary.
           </p>
-          <div class="page">
-            <div class="field field_v1 field_v2">
-              <label for="first-name" class="ha-screen-reader">
+          <div className="page">
+            <div className="field field_v1 field_v2">
+              <label  className="ha-screen-reader">
                 Where to ?
               </label>
               <AutoComplete
@@ -26,14 +42,17 @@ const TravelGuide = () => {
                 onPlaceSelected={(place) => {
                   console.log(place.formatted_address);
                   setAddess(place.formatted_address);
+                  console.log(place);
                 }}
               />
             </div>
           </div>
           <div className=" btn btn-start pt-4">
-            <Link to="#">Start writing</Link>
+            <button type="button" onClick={onSave}>
+              Start writing
+            </button>
           </div>
-          <div class="pt-4 fw-700 small text-danger pl-1 mt-1 ">
+          <div className="pt-4 fw-700 small text-danger pl-1 mt-1 ">
             <Link to="/CreatePlan" className="TripOrGuideForm__altType">
               Or start planning a trip
             </Link>

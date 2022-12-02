@@ -4,14 +4,15 @@ import { CiFacebook } from "react-icons/ci";
 import "./style.css";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineApple } from "react-icons/ai";
-import { auth } from "../../config/firebase-config";
+import { auth } from "../../config/firebase/firebase-config";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import {useConnection} from "../../config/redux/connection/index";
 
 function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
+  const { setUserInfoAction } = useConnection();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -28,16 +29,6 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
     setOpenLogin(false);
   };
 
-  // const auth = getAuth();
-  //   auth.onAuthStateChanged(function (user) {
-  //     if (user) {
-  //       console.log(user);
-  //     } else {
-  //       console.log("no user");
-  //       // No user is signed in.
-  //     }
-  //   });
-
   const onLoginWithEmailAndPass = () => {
     if (!validateData()) {
       return;
@@ -46,7 +37,7 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log(user, "user");
+        setUserInfoAction(user);
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -84,6 +75,7 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
         // This gives you a Facebook Access Token. You can use it to access the Facebook API.
         const credential = FacebookAuthProvider.credentialFromResult(result);
         const accessToken = credential.accessToken;
+        setUserInfoAction(user);
 
         // ...
       })
@@ -104,7 +96,7 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
         console.log(token, "token");
         // The signed-in user info.
         const user = result.user;
-        console.log(user);
+        setUserInfoAction(user);
         // ...
         navigate("/guides");
       })

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 import { CiFacebook } from "react-icons/ci";
 import { FcGoogle } from "react-icons/fc";
-import { auth } from "../../config/firebase-config";
+import { auth } from "../../config/firebase/firebase-config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function OpenModal({ openSignUp, setOpenSignUp, setOpenLogin, toggle }) {
