@@ -16,18 +16,18 @@ const CreatePlan = () => {
               <h1>Plan a new trip</h1>
               <div>
                 <div>
-                  <div class="page">
-                    <div class="field field_v1">
-                      <label for="first-name" class="ha-screen-reader">
+                  <div className="page">
+                    <div className="field field_v1">
+                      <label for="first-name" className="ha-screen-reader">
                         Where to ?
                       </label>
                       <input
                         id="first-name"
-                        class="field__input"
+                        className="field__input"
                         placeholder="e.g. Paris, Hawaii, Japan"
                       />
-                      <span class="field__label-wrap" aria-hidden="true">
-                        <span class="field__label">Where to ?</span>
+                      <span className="field__label-wrap" aria-hidden="true">
+                        <span className="field__label">Where to ?</span>
                       </span>
                     </div>
                   </div>

@@ -9,28 +9,28 @@ import TP from "./Page/Tp/tp";
 import Drive from "./Page/Drive/drive";
 import Guides from "./Page/Guides/guides";
 import { onAuthStateChanged } from "firebase/auth";
-import {auth} from "./config/firebase/firebase-config";
+import { auth } from "./config/firebase/firebase-config";
 import { useEffect } from "react";
-import {useConnection} from "./config/redux/connection/index";
+import { useConnection } from "./config/redux/connection/index";
+import Logintohome from "./Page/LoginToHome/logintohome";
 
 function App() {
-  const {setIsLoginAction} = useConnection();
-  const {setUserInfoAction} = useConnection();
-
+  const { setIsLoginAction } = useConnection();
+  const { setUserInfoAction } = useConnection();
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-        if (user) {
-          setIsLoginAction(true);
-          setUserInfoAction(user);
-          console.log(user);
-        }
+      if (user) {
+        setIsLoginAction(true);
+        setUserInfoAction(user);
+        console.log(user);
+      }
     });
-  }, [])
+  }, []);
 
   return (
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route
@@ -39,13 +39,15 @@ function App() {
         />
         <Route path="/createplan" element={<CreatePlan />} />
         <Route path="/recommendations" element={<TravelGuide />} />
-        <Route path="/tp" element={ <TP/>} />
-        <Route path="/drive" element={ <Drive/>} />
-        <Route path="/guides" element={<Guides/>} />
+        <Route path="/tp" element={<TP />} />
+        <Route path="/drive" element={<Drive />} />
+        <Route path="/guides" element={<Guides />} />
+        <Route path="/LoginToHome" element={<Logintohome/>} />
       </Routes>
-    <Footer />
-  </BrowserRouter>
+      <Footer />
+    </BrowserRouter>
   );
 }
+
 
 export default App;

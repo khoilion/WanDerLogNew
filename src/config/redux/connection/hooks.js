@@ -3,7 +3,7 @@ import {setUserInfo, setIsLogin} from "./reducer";
 import {useCallback} from "react";
 
 export const useConnection = () => {
-    const connection = useSelector(state => state.connection);
+    const connection = useSelector(state => state.connection); 
     const dispatch = useDispatch();
 
     const setUserInfoAction = useCallback((userInfo) => {

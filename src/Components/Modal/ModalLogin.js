@@ -9,7 +9,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { signInWithPopup, FacebookAuthProvider } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import {useConnection} from "../../config/redux/connection/index";
+import { useConnection } from "../../config/redux/connection/index";
 
 function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
   const { setUserInfoAction } = useConnection();
@@ -98,7 +98,8 @@ function OpenModal({ openLogin, setOpenLogin, setOpenSignUp, toggle }) {
         const user = result.user;
         setUserInfoAction(user);
         // ...
-        navigate("/guides");
+        // navigate("/guides");
+        navigate("/LoginToHome");
       })
       .catch((error) => {
         const errorMessage = error.message;

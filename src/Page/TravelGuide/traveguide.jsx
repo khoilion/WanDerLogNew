@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import AutoComplete from "react-google-autocomplete";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../config/firebase/firebase-config";
-import {useConnection} from "../../config/redux/connection/index";
+import { useConnection } from "../../config/redux/connection/index";
 
 const TravelGuide = () => {
-  const {connection} = useConnection();
+  const { connection } = useConnection();
   const { userInfo } = connection;
   const [address, setAddess] = React.useState("");
 
@@ -19,8 +19,8 @@ const TravelGuide = () => {
       createdAt: new Date().getTime(),
       updatedAt: new Date().getTime(),
     });
-  }
-  
+  };
+
   return (
     <>
       <div className="container">
@@ -33,9 +33,7 @@ const TravelGuide = () => {
           </p>
           <div className="page">
             <div className="field field_v1 field_v2">
-              <label  className="ha-screen-reader">
-                Where to ?
-              </label>
+              <label className="ha-screen-reader">Where to ?</label>
               <AutoComplete
                 style={{ width: "100%" }}
                 apiKey="AIzaSyDMpLdwzRWo90pvohoMvrH9dinBcoy7mg4"
