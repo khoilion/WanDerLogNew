@@ -1,0 +1,26 @@
+.site-content {
+    min-height: 60vh;
+    padding-top: 43px;
+    margin-top: 73px;
+    transition: all 0.4s;
+    background-color: #dfdfdf;
+}
+
+.section-title h2 {
+    border-bottom: 1px solid #eee;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 27px;
+}
+
+.section-title span {
+    border-bottom: 1px solid rgba(0, 0, 0, .44);
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+    text-transform: capitalize;
+}
+
+.card-block{
+    border: 1px solid #dfdfdf;
+}

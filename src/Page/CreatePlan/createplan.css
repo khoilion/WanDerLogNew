@@ -90,18 +90,23 @@
 .ant-picker {
     width: 100%;
 }
+
 .ant-picker-range {
     padding: 12px !important;
 }
+
 .ant-space {
     display: block !important;
 }
+
 .ant-space-item {
     width: 100%;
 }
+
 .TripOrGuideForm__altType:hover {
     color: #e12709;
 }
+
 .TripOrGuideForm__altType {
     color: #f75940;
 }

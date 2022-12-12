@@ -22,12 +22,12 @@ const Footer = () => {
                 <div className="mb-3 title-footer">Wanderlog</div>
                 <ul>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/blog">
                       Blog
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/security">
                       Report security issue
                     </Link>
                   </li>

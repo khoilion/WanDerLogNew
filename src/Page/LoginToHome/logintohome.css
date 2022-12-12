@@ -137,11 +137,13 @@ h1 {
     border-width: 1px;
     display: inline-flex;
 }
+
 .btn__elm__plan:hover {
     background-color: #dee2e6;
     border-color: #dee2e6;
     color: #212529;
 }
+
 .text-brand {
     color: #f75940;
     font-weight: 700;
@@ -169,9 +171,49 @@ h1 {
     border-radius: 12px;
     right: 20px;
 }
+
 .menu__item__guides:hover {
     background-color: #f3f4f5;
     color: #16181b;
     text-decoration: none;
     border-radius: 7px;
+}
+
+.button__cancel__save {
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.button__flat__secondary {
+    background-color: transparent;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 24px;
+    height: 40px;
+    min-width: 65px;
+    padding: 7px;
+    font-weight: 700;
+
+}
+
+.button__flat__secondary:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #495057;
+}
+
+.button__brand {
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    border-radius: 24px;
+    height: 40px;
+    min-width: 65px;
+    padding: 7px;
+}
+
+.button__brand:hover {
+    background-color: #de503a;
+    border-color: #de503a;
+    color: #fff;
 }

@@ -1,0 +1,47 @@
+.container-fixed-padding {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+}
+
+.section__content__connection {
+    margin: 72px 0px 88px 0px;
+}
+
+.bh__mobileapp {
+    background: #feefed;
+    margin-bottom: 88px;
+}
+
+.plan__no__connection {
+    top: 0;
+}
+
+.plan__no__connection h2 {
+    color: #2c365d;
+    font-size: 40px;
+    letter-spacing: -.03em;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.plan__no__connection p {
+    color: #6c757d;
+    font-size: 1.5rem;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+}
+
+.travelers__evaluate h2 {
+    color: #2c365d;
+    font-size: 2.25rem;
+    letter-spacing: -.03em;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}

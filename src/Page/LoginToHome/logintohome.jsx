@@ -17,11 +17,10 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { IoMdShareAlt } from "react-icons/io";
 import CpmRecent from "../Guides/CpnBoxRecentGuides/cpmrecent";
 
-
 const { RangePicker } = DatePicker;
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
+// const handleChange = (value) => {
+//   console.log(`selected ${value}`);
+// };
 // const [showModalBookRoom, setShowModalBookRoom] = useState(false);
 // const handleChangeModalBookRoom = () => {
 //   setShowModalBookRoom(!showModalBookRoom);
@@ -66,16 +65,15 @@ const Logintohome = () => {
     setCount2((count2) => count2 - 1); // gọi hàm setCount để cập nhật giá trị mới cho count
   }; // hàm giảm count
 
-
   return (
     <div className="home___login">
       <section className="container">
         <div className="d-flex align-items-center justify-content-between pt-3 pb-3">
           <div>
-            <h1>Recently viewed and upcoming</h1>
+            <h1>Recently viewed and upcoming</h1> 
           </div>
           <div className=" btn-start">
-            <Link to="/" className="d-flex align-items-center">
+            <Link to="/createplan" className="d-flex align-items-center">
               <div>Plan new trip</div>
             </Link>
           </div>
@@ -84,7 +82,7 @@ const Logintohome = () => {
           <img src="img/img_focus.jpg" alt="" />
           <p>Spain Guide</p>
           <div className="d-flex">
-            <div className="d-flex align-items-center me-4">
+            <div className="d-flex align-items-center me-4"> 
               <div>
                 <AiOutlineHeart />
               </div>
@@ -185,7 +183,7 @@ const Logintohome = () => {
                         </div>
                         <div className="d-flex align-items-center">
                           <button
-                          disabled={count1 === 1}
+                            disabled={count1 === 1}
                             onClick={decrement1}
                             className="btn__elm__booking"
                           >
@@ -209,7 +207,7 @@ const Logintohome = () => {
                         </div>
                         <div className="d-flex align-items-center">
                           <button
-                          disabled={count2 === 0}
+                            disabled={count2 === 0}
                             onClick={decrement2}
                             className="btn__elm__booking"
                           >
@@ -221,6 +219,18 @@ const Logintohome = () => {
                             className="btn__elm__booking"
                           >
                             <AiOutlinePlus />
+                          </button>
+                        </div>
+                      </div>
+                      <div className="d-flex justify-content-end mt-4">
+                        <div>
+                          <button onClick={handleChangeModalBookRoom} className="me-3 button__cancel__save button__flat__secondary">
+                            Cancel
+                          </button>
+                        </div>
+                        <div>
+                          <button className="button__cancel__save button__brand">
+                            Save
                           </button>
                         </div>
                       </div>
@@ -246,6 +256,7 @@ const Logintohome = () => {
       </section>
       <section className="container">
         <iframe
+        title="map"
           className="mt-5 mt-5 mb-5 iframe__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.98839009503!2d105.8194540736697!3d21.022738704089598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1670213209005!5m2!1svi!2s"
           loading="lazy"
@@ -268,7 +279,7 @@ const Logintohome = () => {
               </div>
               <div>
                 You don’t have any trip plans yet.{" "}
-                <Link to="/" className="text-brand">
+                <Link to="/createplan" className="text-brand">
                   Plan a new trip.
                 </Link>
               </div>

@@ -1,0 +1,28 @@
+.card-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.21rem;
+    line-height: 1.1;
+    margin-bottom: .75rem;
+}
+
+.card-text {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.meta-footer-thumb img{
+    border-radius: 50%;
+}
+
+.dot {
+    margin: 0px 10px;
+}

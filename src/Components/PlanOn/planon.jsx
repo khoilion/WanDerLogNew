@@ -13,7 +13,7 @@ const Planon = () => {
               <div className="content__text__planon">
                 <div className="fw-700 fs-24">
                   <span>Plan on the go with our</span>
-                  <Link className="hover__text__planon" to="/">free travel app</Link>
+                  <Link className="hover__text__planon" to="/mobileApp">free travel app</Link>
                 </div>
                 <div className="pt-2 fs-18">
                     <p>With Wanderlog's mobile travel planner on Android and iOS, access and edit your trips wherever you go — even while offline.</p>

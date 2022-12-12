@@ -1,0 +1,8 @@
+.contact__email{
+    background-color: initial;
+    color: #3f52e3;
+    text-decoration: none;
+}
+.contact__email:hover {
+    text-decoration: underline;
+}

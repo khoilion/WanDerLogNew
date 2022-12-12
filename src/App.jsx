@@ -13,6 +13,9 @@ import { auth } from "./config/firebase/firebase-config";
 import { useEffect } from "react";
 import { useConnection } from "./config/redux/connection/index";
 import Logintohome from "./Page/LoginToHome/logintohome";
+import MobileApp from "./Page/MobileApp/mobileapp";
+import Blog from "./Page/BLog/blog";
+import Security from "./Page/Securitys/security";
 
 function App() {
   const { setIsLoginAction } = useConnection();
@@ -20,10 +23,11 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
+      // check if user is logged in
       if (user) {
-        setIsLoginAction(true);
-        setUserInfoAction(user);
-        console.log(user);
+        setIsLoginAction(true); // set isLogin to true
+        setUserInfoAction(user); // set user info
+        console.log(user, "user123");
       }
     });
   }, []);
@@ -42,12 +46,14 @@ function App() {
         <Route path="/tp" element={<TP />} />
         <Route path="/drive" element={<Drive />} />
         <Route path="/guides" element={<Guides />} />
-        <Route path="/LoginToHome" element={<Logintohome/>} />
+        <Route path="/LoginToHome" element={<Logintohome />} />
+        <Route path="/mobileApp" element={<MobileApp />} />
+        <Route path="/blog" element={ <Blog /> } />
+        <Route path="/security" element={<Security />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
   );
 }
-
 
 export default App;

@@ -61,7 +61,12 @@ const CreatePlan = () => {
                     <Link to="/createplan">Start planning</Link>
                   </div>
                   <div class="pt-4 fw-700 small text-danger pl-1 mt-1 ">
-                    <Link to="/recommendations" className="TripOrGuideForm__altType">Or start planning a trip</Link>
+                    <Link
+                      to="/recommendations"
+                      className="TripOrGuideForm__altType"
+                    >
+                      Or start planning a trip
+                    </Link>
                   </div>
                 </div>
               </div>
