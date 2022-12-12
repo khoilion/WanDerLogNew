@@ -1,0 +1,64 @@
+section {
+    padding: 30px 0px;
+}
+
+.bg__banner__content {
+    background-color: #feefed;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+p {
+    font-size: 1.5rem;
+    letter-spacing: -.03em;
+    line-height: 1.2;
+    color: #6c757d;
+
+}
+
+.btn__banner {
+    padding: 0px 24px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    border-radius: 100px;
+    height: 56px;
+    min-width: 56px;
+    padding: 12px;
+}
+
+.img___banner {
+    margin-bottom: -100px;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 2.25rem;
+    letter-spacing: -.03em;
+    color: #2c365d !important;
+    line-height: 1 !important;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.text-muted {
+    color: #6c757d !important;
+    font-size: 75%;
+    font-weight: 400;
+}
+
+.size__icon {
+    width: 36px;
+    height: 32px;
+}
+
+.LandingPageSection {
+    margin: 72px 0px;
+}
+
+a:hover {
+    text-decoration: underline !important;
+    color: #1828a4;
+}

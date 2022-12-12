@@ -1,0 +1,83 @@
+.banner__extension {
+    background-color: rgb(254, 239, 237);
+    margin-bottom: -120px;
+    padding-bottom: 160px;
+    padding-top: 160px;
+}
+
+.banner__extension h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    color: rgb(44, 54, 93) !important;
+    font-weight: 700;
+    width: 55%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.banner__extension p {
+    font-size: 1.5rem;
+    color: rgb(44, 54, 93);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dowload__extension {
+    padding: 0px 24px;
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    border-radius: 100px;
+    height: 56px;
+    min-width: 56px;
+    padding: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ==============================extensionLandingPage__container========================*/
+.extensionLandingPage__container h2{
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    color: rgb(44, 54, 93) !important;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 16px!important;
+}
+.extensionLandingPage__container li {
+    font-size: 16px;
+    color: #6C757D;
+}
+.LandingPageSectionHeading  {
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    color: rgb(44, 54, 93) !important;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.btn___elm {
+    margin:10px 15px;
+    border: none;
+    border-radius: 24px;
+    height: 50px;
+    min-width: 65px;
+    padding: 7px;
+    padding: 0px 55px;
+}
+.btn___download {
+    background-color: #f75940;
+    border-color: #f75940;
+    border-width: 1px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn___planner {
+    background-color: #feefed;
+    border-color: #feefed;
+    border-width: 1px;
+    color: #f75940;
+    font-weight: 700;
+}

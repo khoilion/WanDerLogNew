@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./footer.css";
 import { AiFillHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [contactus, setContacus] = useState(false);
+  const handleChangeClickContactUs = () => {
+    setContacus(!contactus);
+  };
   return (
     <>
       <div id="footer">
@@ -32,22 +36,22 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/terms">
                       Terms of use
-                    </Link>
-                    <span className="children-title-footer"> &</span>
-                    <Link className="children-title-footer" to="/">
+                    </Link>{" "}
+                    &
+                    <Link className="children-title-footer" to="/privacy">
                       {" "}
                       Privacy policy
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/mobileApp">
                       Mobile app
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/extension">
                       Browser extension
                     </Link>
                   </li>
@@ -57,22 +61,33 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/embed-travel-map-on-blog">
                       How to embed a map on your travel blog
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/jobs">
                       Jobs
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
-                      Contact us
-                    </Link>
+                    {contactus ? (
+                      <p>admin@wanderlog.com</p>
+                    ) : (
+                      <Link
+                        onClick={handleChangeClickContactUs}
+                        className="children-title-footer"
+                        to=""
+                      >
+                        Contact us
+                      </Link>
+                    )}
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link
+                      className="children-title-footer"
+                      to="/google-disclosure"
+                    >
                       Google data disclosure
                     </Link>
                   </li>

@@ -1,0 +1,27 @@
+#privacy p {
+    margin-bottom: 1rem !important;
+    margin-top: 0 !important;
+    font-size: 16px;
+}
+
+#privacy ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+#privacy .letter-spacing-03 {
+    letter-spacing: -.03em !important;
+}
+
+#privacy h1 {
+    margin-bottom: 1rem !important;
+}
+
+#privacy h2 {
+    font-size: 24px;
+}
+
+.navbar-offset {
+    padding-bottom: 60px;
+    padding-top: 64px;
+}

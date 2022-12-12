@@ -1,0 +1,42 @@
+#jobs {
+    padding-top: 43px;
+}
+#jobs span {
+    border-bottom: 1px solid rgba(0,0,0,.44);
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+    text-transform: capitalize;
+}
+#jobs p {
+    color: #222222;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: -.03em;
+}
+#jobs a {
+    color: #f75940 !important; 
+}
+#jobs a:hover {
+    color: #f75940 !important; 
+    text-decoration: underline;
+}
+#jobs figcaption {
+    color: #555;
+    font-size: 13px;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    background: #fbfbfb;
+    padding: 10px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+#jobs ul {
+   list-style: disc;
+   padding-left: 32px;
+   color: #222222;
+   font-size: 20px;
+}

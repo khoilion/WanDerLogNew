@@ -1,0 +1,24 @@
+.navbar-offset {
+    padding-bottom: 60px;
+    padding-top: 64px;
+}
+
+.googledisclosure {
+    padding-top: 16px;
+}
+
+h1 {
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -.03em;
+    font-size: 2.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    letter-spacing: 0;
+    color: #212529;
+    font-size: 16px;
+}

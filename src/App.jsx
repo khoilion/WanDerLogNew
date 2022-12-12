@@ -16,6 +16,12 @@ import Logintohome from "./Page/LoginToHome/logintohome";
 import MobileApp from "./Page/MobileApp/mobileapp";
 import Blog from "./Page/BLog/blog";
 import Security from "./Page/Securitys/security";
+import Terms from "./Page/Terms/terms";
+import Privacy from "./Page/Privacy/privacy";
+import Extension from "./Components/ExtensionApp/extension";
+import GoogleDisclosure from "./Page/GoogleDisclosure/googledisclosure";
+import Jobs from "./Page/Jobs/jobs";
+import EmbedTravelMapOnBlog from "./Page/EmbedTravelMapOnBlog/embedtravelmaponblog";
 
 function App() {
   const { setIsLoginAction } = useConnection();
@@ -48,8 +54,14 @@ function App() {
         <Route path="/guides" element={<Guides />} />
         <Route path="/LoginToHome" element={<Logintohome />} />
         <Route path="/mobileApp" element={<MobileApp />} />
-        <Route path="/blog" element={ <Blog /> } />
-        <Route path="/security" element={<Security />}/>
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/security" element={<Security />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/extension" element={<Extension />} />
+        <Route path="/google-disclosure" element={<GoogleDisclosure />} />
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/embed-travel-map-on-blog" element={<EmbedTravelMapOnBlog />} />
       </Routes>
       <Footer />
     </BrowserRouter>
