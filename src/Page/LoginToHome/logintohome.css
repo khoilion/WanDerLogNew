@@ -17,6 +17,7 @@ h1 {
     padding: 9px 20px;
     font-size: 16px;
     font-weight: 700;
+    justify-content: center;
 }
 
 .img__box__logintohome img {
@@ -216,4 +217,26 @@ h1 {
     background-color: #de503a;
     border-color: #de503a;
     color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .hotebooking {
+        display: none;
+    }   
+    .reponsive__logintohome {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .img__box__logintohome{
+        width: 100% !important;
+    }
+    .btn-start {
+        width: 50%;
+        padding-top: 10px;
+    }
+    .btn-start a {
+        justify-content: center;
+    }
 }

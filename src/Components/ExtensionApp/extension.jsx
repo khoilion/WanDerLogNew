@@ -82,8 +82,12 @@ const Extension = () => {
             Ready to streamline your travel planning?
           </h2>
           <div className="text-center">
-            <button className="btn___elm btn___download">Download extension</button>
-            <button className="btn___elm btn___planner">Try our trip planner</button>
+            <button className="btn___elm btn___download">
+              Download extension
+            </button>
+            <button className="btn___elm btn___planner">
+              Try our trip planner
+            </button>
           </div>
         </div>
       </section>

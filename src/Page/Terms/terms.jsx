@@ -164,12 +164,16 @@ const Terms = () => {
               into effect constitutes your agreement to pay the modified
               Subscription fee amount.
             </p>
-            <h2 className="font-weight-bold mb-3 line-height-1 letter-spacing-03">7. Refunds</h2>
+            <h2 className="font-weight-bold mb-3 line-height-1 letter-spacing-03">
+              7. Refunds
+            </h2>
             <p>
               Except when required by law, paid Subscription fees are
               non-refundable.
             </p>
-            <h2 className="font-weight-bold mb-3 line-height-1 letter-spacing-03">8. Content</h2>
+            <h2 className="font-weight-bold mb-3 line-height-1 letter-spacing-03">
+              8. Content
+            </h2>
             <p>
               Our Service allows you to post, link, store, share and otherwise
               make available certain information, text, graphics, videos, or

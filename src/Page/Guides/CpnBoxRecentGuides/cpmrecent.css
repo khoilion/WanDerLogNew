@@ -53,12 +53,15 @@
     min-width: 26px;
     width: 26px;
 }
+
 .card__img {
     position: relative;
 }
+
 .more {
     position: absolute;
 }
+
 /* ========================BtnSeemore================================ */
 .btn__seemore {
     padding: 10px 64px;

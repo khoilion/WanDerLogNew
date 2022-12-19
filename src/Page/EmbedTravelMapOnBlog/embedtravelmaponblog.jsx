@@ -85,24 +85,30 @@ const EmbedTravelMapOnBlog = () => {
               </div>
               <div className="col-3">
                 <Link to="">
-                  <img src="img/Where_Are_Those_Morgans_4da3369845.png" alt="" />
+                  <img
+                    src="img/Where_Are_Those_Morgans_4da3369845.png"
+                    alt=""
+                  />
                 </Link>
               </div>
               <div className="col-3">
                 <Link to="">
-                  <img src="img/20210628_the_Travel_Blogs_Logo_277029c01b.png" alt="" />
+                  <img
+                    src="img/20210628_the_Travel_Blogs_Logo_277029c01b.png"
+                    alt=""
+                  />
                 </Link>
               </div>
             </div>
           </div>
         </section>
         <section className="LandingPageSection">
-            <div className="container">
-                <div>
-                    <h2 className="text-center" >What bloggers are saying</h2>
-                </div>
-                <TravelersComents />
+          <div className="container">
+            <div>
+              <h2 className="text-center">What bloggers are saying</h2>
             </div>
+            <TravelersComents />
+          </div>
         </section>
       </div>
     </>

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 // import {Dimensions} from "react-native";
 
-const initialState = { 
+const initialState = {
   userInfo: null,
   isLogin: false,
 };

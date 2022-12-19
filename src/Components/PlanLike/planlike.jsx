@@ -17,48 +17,66 @@ const Planlike = () => {
               <Link to="/"> much more</Link>
             </div>
           </div>
-          <div className="row">
-            <div className="col-4 text-center">
-              <img
-                className="w-100"
-                src="img/LandingPageProFeatureTiles__offline-1.png"
-                alt=""
-              />
-              <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
-                Offline access
-              </h3>
-              <p className="fs-16 letter-spacing-3">
-                No wifi, no problem. Your trip plans are locally downloaded for
-                access anywhere.
-              </p>
+          <div className="row justify-content-center">
+            <div className="col-sm-6 col-lg-4 text-center">
+              <div className="row align-items-center">
+                <div className="col-5 col-sm-12">
+                  <img
+                    className="w-100"
+                    src="img/LandingPageProFeatureTiles__offline-1.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-7 col-sm-12 text__reponsive__planlike">
+                  <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
+                    Offline access
+                  </h3>
+                  <p className="fs-16 letter-spacing-3">
+                    No wifi, no problem. Your trip plans are locally downloaded
+                    for access anywhere.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="col-4 text-center">
-              <img
-                className="w-100"
-                src="img/LandingPageProFeatureTiles__attachments-2.png"
-                alt=""
-              />
-              <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
-                Unlimited attachments
-              </h3>
-              <p className="fs-16 letter-spacing-3">
-                Never dig through your emails again — access all your trip files
-                and PDFs in one place.
-              </p>
+            <div className="col-sm-6 col-lg-4 text-center">
+              <div className="row align-items-center">
+                <div className="col-5 col-sm-12">
+                  <img
+                    className="w-100"
+                    src="img/LandingPageProFeatureTiles__attachments-2.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-7 col-sm-12 text__reponsive__planlike">
+                  <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
+                    Unlimited attachments
+                  </h3>
+                  <p className="fs-16 letter-spacing-3">
+                    Never dig through your emails again — access all your trip
+                    files and PDFs in one place.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="col-4 text-center">
-              <img
-                className="w-100"
-                src="img/LandingPageProFeatureTiles__optimize-3.png"
-                alt=""
-              />
-              <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
-                Optimize your route
-              </h3>
-              <p className="fs-16 letter-spacing-3">
-                Perfect for road trips and saving $$$ on gas! Get the best route
-                auto-rearranged.
-              </p>
+            <div className="col-sm-6 col-lg-4 text-center">
+              <div className="row align-items-center">
+                <div className="col-5 col-sm-12">
+                  <img
+                    className="w-100"
+                    src="img/LandingPageProFeatureTiles__optimize-3.png"
+                    alt=""
+                  />
+                </div>
+                <div className="col-7 col-sm-12 text__reponsive__planlike">
+                  <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
+                    Optimize your route
+                  </h3>
+                  <p className="fs-16 letter-spacing-3">
+                    Perfect for road trips and saving $$$ on gas! Get the best
+                    route auto-rearranged.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

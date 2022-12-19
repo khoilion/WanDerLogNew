@@ -20,12 +20,11 @@
 
 .bg__Planon {
     background: #ebedfc;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .telephone__img__planon img {
     margin-top: -100px;
-    padding: 0px 50px;
 }
 
 .content__text__planon {
@@ -36,4 +35,18 @@
 .hover__text__planon:hover {
     color: #1828a4;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .telephone__img__planon img {
+        margin-top: 0px;
+        padding: 0px 0px;
+    }
+    .content__text__planon {
+        margin-left: 0px;
+        padding: 0px 0px 0px
+    }
+    .bg__Planon {
+        padding-top: 30px;
+    }
 }

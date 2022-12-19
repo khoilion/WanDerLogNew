@@ -30,3 +30,9 @@ a:hover {
     color: #1828a4;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 576px) {
+    .text__reponsive__planlike {
+        text-align: start;
+    }
+}

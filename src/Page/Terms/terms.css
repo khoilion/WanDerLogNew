@@ -1,16 +1,19 @@
-#terms p{
+#terms p {
     margin-bottom: 1rem !important;
     margin-top: 0 !important;
     font-size: 16px;
 }
+
 #terms ul {
     list-style: auto;
     padding-left: 40px;
 }
+
 #terms Link:hover {
     color: #1828a4;
     text-decoration: underline;
 }
+
 .letter-spacing-03 {
     letter-spacing: -.03em !important;
 }

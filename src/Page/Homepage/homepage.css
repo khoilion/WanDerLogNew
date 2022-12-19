@@ -182,9 +182,10 @@
 /* ==============================reponsive======================================= */
 @media (max-width: 425px) {
     .message-fixed {
-      display: none;
+        display: none;
     }
+
     .modal__messager {
-      display: none;
+        display: none;
     }
-  }
+}

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="container">
           <div className="mg-footer">
             <div className="row">
-              <div className="col-3">
+              <div className="col-sm-3 col-6 reponsive__footer__content">
                 Made with{" "}
                 <span>
                   <AiFillHeart />
@@ -22,7 +22,7 @@ const Footer = () => {
                 in SF & more
                 <br />© 2022 Travelchime Inc.
               </div>
-              <div className="col-4">
+              <div className="col-sm-4 col-6 reponsive__footer__content__1">
                 <div className="mb-3 title-footer">Wanderlog</div>
                 <ul>
                   <li className="mb-3 footer__link">
@@ -56,12 +56,18 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link
+                      className="children-title-footer"
+                      to="/travel-budget-expense-splitting-app"
+                    >
                       Travel budgeting & cost tracking
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/embed-travel-map-on-blog">
+                    <Link
+                      className="children-title-footer"
+                      to="/embed-travel-map-on-blog"
+                    >
                       How to embed a map on your travel blog
                     </Link>
                   </li>
@@ -93,47 +99,50 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-3">
+              <div className="col-sm-3 col-6 reponsive__footer__content__2">
                 <div className="mb-3 title-footer">Guides</div>
                 <ul>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/tp">
                       Trip planners by destination
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/drive">
                       Road trips by destination
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/cat">
                       Distances between cities
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link
+                      className="children-title-footer"
+                      to="/SearchedCategories"
+                    >
                       Popular search terms by destination
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/Countries">
                       Weather around the world
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/geo">
                       Travel questions & answers
                     </Link>
                   </li>
                   <li className="mb-3 footer__link">
-                    <Link className="children-title-footer" to="/">
+                    <Link className="children-title-footer" to="/itinerary">
                       Travel itinerary guides
                     </Link>
                   </li>
                 </ul>
               </div>
-              <div className="col-2">
+              <div className="col-sm-2 col-6 reponsive__footer__content__3">
                 <div className="mb-3 title-footer">Get the app</div>
                 <ul>
                   <li>

@@ -20,7 +20,7 @@ const Destination = () => {
       <div className="bg-box-destination">
         <div className="container text-center">
           <div className="row">
-            <div className="col-3">
+            <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
                 <img
                   className="img__slideShow"
@@ -28,21 +28,31 @@ const Destination = () => {
                   alt=""
                 />
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
-                  <span className="fs-24 fw-700 letter-spacing-3">San Francisco Neighborhood Guide</span>
+                  <span className="fs-24 fw-700 letter-spacing-3">
+                    San Francisco Neighborhood Guide
+                  </span>
                   <div className="d-flex align-items-center">
                     <div>
-                        <img className="bubble__size__sm me-2" src="img/avt-slideShow.jpg" alt="" />
+                      <img
+                        className="bubble__size__sm me-2"
+                        src="img/avt-slideShow.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="text-start">
-                        <span className="fw-700 letter-spacing-3">Oliver Manheim</span>
-                        <br />
-                        <span className="letter-spacing-3 fw-600">27161 views • 109 likes</span>
+                      <span className="fw-700 letter-spacing-3">
+                        Oliver Manheim
+                      </span>
+                      <br />
+                      <span className="letter-spacing-3 fw-600">
+                        27161 views • 109 likes
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
                 <img
                   className="img__slideShow"
@@ -50,21 +60,31 @@ const Destination = () => {
                   alt=""
                 />
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
-                  <span className="fs-24 fw-700 letter-spacing-3">San Francisco Neighborhood Guide</span>
+                  <span className="fs-24 fw-700 letter-spacing-3">
+                    San Francisco Neighborhood Guide
+                  </span>
                   <div className="d-flex align-items-center">
                     <div>
-                        <img className="bubble__size__sm me-2" src="img/avt-slideShow.jpg" alt="" />
+                      <img
+                        className="bubble__size__sm me-2"
+                        src="img/avt-slideShow.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="text-start">
-                        <span className="fw-700 letter-spacing-3">Oliver Manheim</span>
-                        <br />
-                        <span className="letter-spacing-3 fw-600">27161 views • 109 likes</span>
+                      <span className="fw-700 letter-spacing-3">
+                        Oliver Manheim
+                      </span>
+                      <br />
+                      <span className="letter-spacing-3 fw-600">
+                        27161 views • 109 likes
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
                 <img
                   className="img__slideShow"
@@ -72,21 +92,31 @@ const Destination = () => {
                   alt=""
                 />
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
-                  <span className="fs-24 fw-700 letter-spacing-3">San Francisco Neighborhood Guide</span>
+                  <span className="fs-24 fw-700 letter-spacing-3">
+                    San Francisco Neighborhood Guide
+                  </span>
                   <div className="d-flex align-items-center">
                     <div>
-                        <img className="bubble__size__sm me-2" src="img/avt-slideShow.jpg" alt="" />
+                      <img
+                        className="bubble__size__sm me-2"
+                        src="img/avt-slideShow.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="text-start">
-                        <span className="fw-700 letter-spacing-3">Oliver Manheim</span>
-                        <br />
-                        <span className="letter-spacing-3 fw-600">27161 views • 109 likes</span>
+                      <span className="fw-700 letter-spacing-3">
+                        Oliver Manheim
+                      </span>
+                      <br />
+                      <span className="letter-spacing-3 fw-600">
+                        27161 views • 109 likes
+                      </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-3">
+            <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
                 <img
                   className="img__slideShow"
@@ -94,15 +124,25 @@ const Destination = () => {
                   alt=""
                 />
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
-                  <span className="fs-24 fw-700 letter-spacing-3">San Francisco Neighborhood Guide</span>
+                  <span className="fs-24 fw-700 letter-spacing-3">
+                    San Francisco Neighborhood Guide
+                  </span>
                   <div className="d-flex align-items-center">
                     <div>
-                        <img className="bubble__size__sm me-2" src="img/avt-slideShow.jpg" alt="" />
+                      <img
+                        className="bubble__size__sm me-2"
+                        src="img/avt-slideShow.jpg"
+                        alt=""
+                      />
                     </div>
                     <div className="text-start">
-                        <span className="fw-700 letter-spacing-3">Oliver Manheim</span>
-                        <br />
-                        <span className="letter-spacing-3 fw-600">27161 views • 109 likes</span>
+                      <span className="fw-700 letter-spacing-3">
+                        Oliver Manheim
+                      </span>
+                      <br />
+                      <span className="letter-spacing-3 fw-600">
+                        27161 views • 109 likes
+                      </span>
                     </div>
                   </div>
                 </div>

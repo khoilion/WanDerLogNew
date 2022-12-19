@@ -1,0 +1,69 @@
+.travelbudget {
+    background-color: #feefed;
+}
+
+.travelbudget h1 {
+    font-size: 2.25rem;
+    letter-spacing: -.03em;
+    color: #2c365d !important;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 16px !important;
+}
+
+.BudgetLandingPageAnimation__section {
+
+    background-color: #fff;
+    border-radius: 36px;
+    height: 310px;
+    min-width: 385px;
+    padding: 36px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    letter-spacing: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.BudgetLandingPageAnimation__background {
+    background-color: #f3f4f5;
+    border-radius: 16px;
+    padding: 36px 24px;
+    letter-spacing: 0;
+}
+
+.Font___ {
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 8px;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.rounded-16 {
+    border-radius: 16px !important;
+}
+
+.margin___section {
+    margin: 200px auto;
+}
+
+.text__content__ h3 {
+    color: #2c365d !important;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 16px !important;
+    letter-spacing: -.03em;
+    font-size: 22px;
+}
+
+.text__content__ p {
+    font-size: 16px;
+    color: #6c757d;
+
+}
+
+.bg-purple-lightest {
+    background: #e2daef;
+}

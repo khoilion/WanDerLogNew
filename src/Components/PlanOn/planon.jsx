@@ -1,6 +1,6 @@
 import React from "react";
 import "./planon.css";
-import {AiFillStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Planon = () => {
@@ -13,38 +13,50 @@ const Planon = () => {
               <div className="content__text__planon">
                 <div className="fw-700 fs-24">
                   <span>Plan on the go with our</span>
-                  <Link className="hover__text__planon" to="/mobileApp">free travel app</Link>
+                  <Link className="hover__text__planon" to="/mobileApp">
+                    free travel app
+                  </Link>
                 </div>
-                <div className="pt-2 fs-18">
-                    <p>With Wanderlog's mobile travel planner on Android and iOS, access and edit your trips wherever you go — even while offline.</p>
+                <div className="pt-2">
+                  <p className="fs-18">
+                    With Wanderlog's mobile travel planner on Android and iOS,
+                    access and edit your trips wherever you go — even while
+                    offline.
+                  </p>
                 </div>
-                <div className="d-flex pt-2">
+                <div className="pt-2">
+                  <span>
                     <img className="h-40" src="img/AppBadge__ios.png" alt="" />
-                    <img className="h-40" src="img/AppBadge__android.png" alt="" />
+                  </span>
+                  <span>
+                    <img
+                      className="h-40"
+                      src="img/AppBadge__android.png"
+                      alt=""
+                    />
+                  </span>
                 </div>
-                <div className="pt-3">
-                    <nav>
-                        <ul className="d-flex">
-                            <li>
-                                <AiFillStar />
-                            </li>
-                            <li>
-                                <AiFillStar />
-                            </li>
-                            <li>
-                                <AiFillStar />
-                            </li>
-                            <li>
-                                <AiFillStar />
-                            </li>
-                            <li>
-                                <AiFillStar />
-                            </li>
-                        </ul>
-                    </nav>
-                    <p className="fs-12">
-                    4.9 on App Store, 4.7 on Google Play
-                    </p>
+                <div>
+                  <nav>
+                    <ul className="d-flex">
+                      <li>
+                        <AiFillStar />
+                      </li>
+                      <li>
+                        <AiFillStar />
+                      </li>
+                      <li>
+                        <AiFillStar />
+                      </li>
+                      <li>
+                        <AiFillStar />
+                      </li>
+                      <li>
+                        <AiFillStar />
+                      </li>
+                    </ul>
+                  </nav>
+                  <p className="fs-12">4.9 on App Store, 4.7 on Google Play</p>
                 </div>
               </div>
             </div>

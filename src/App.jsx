@@ -22,6 +22,12 @@ import Extension from "./Components/ExtensionApp/extension";
 import GoogleDisclosure from "./Page/GoogleDisclosure/googledisclosure";
 import Jobs from "./Page/Jobs/jobs";
 import EmbedTravelMapOnBlog from "./Page/EmbedTravelMapOnBlog/embedtravelmaponblog";
+import TravelBudget from "./Page/TravelBudgetExpenseSplittingApp/travelbudget";
+import Cat from "./Page/Cat/cat";
+import SearchedCategories from "./Page/SearchedCategories/searchedcategories";
+import Countries from "./Page/Countries/countries";
+import Geo from "./Page/Geo/geo";
+import Itinerary from "./Page/Itinerary/itinerary";
 
 function App() {
   const { setIsLoginAction } = useConnection();
@@ -61,7 +67,19 @@ function App() {
         <Route path="/extension" element={<Extension />} />
         <Route path="/google-disclosure" element={<GoogleDisclosure />} />
         <Route path="/jobs" element={<Jobs />} />
-        <Route path="/embed-travel-map-on-blog" element={<EmbedTravelMapOnBlog />} />
+        <Route
+          path="/embed-travel-map-on-blog"
+          element={<EmbedTravelMapOnBlog />}
+        />
+        <Route
+          path="/travel-budget-expense-splitting-app"
+          element={<TravelBudget />}
+        />
+        <Route path="/cat" element={<Cat />} />
+        <Route path="/searchedcategories" element={<SearchedCategories />} />
+        <Route path="/countries" element={<Countries />} />
+        <Route path="/geo" element={<Geo />} />
+        <Route path="/itinerary" element={<Itinerary />} />
       </Routes>
       <Footer />
     </BrowserRouter>

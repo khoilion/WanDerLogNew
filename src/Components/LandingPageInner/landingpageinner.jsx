@@ -23,7 +23,10 @@ const LandingPageInner = () => {
               <div className="col-4">
                 <h3 className="planner mb-3">
                   The best
-                  <Link className="destination" to="/drive"> road trip </Link>
+                  <Link className="destination" to="/drive">
+                    {" "}
+                    road trip{" "}
+                  </Link>
                   planner
                 </h3>
                 <div className="text-muted">

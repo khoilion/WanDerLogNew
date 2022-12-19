@@ -15,7 +15,11 @@ const Banner = () => {
       <div className="banner">
         <div className="anh1">
           <div>
-            <img className="w-100 z-index-39" src="img/Banner__page.jpg" alt="" />
+            <img
+              className="w-100 z-index-39"
+              src="img/Banner__page.jpg"
+              alt=""
+            />
           </div>
           <div>
             <img
@@ -25,7 +29,11 @@ const Banner = () => {
             />
           </div>
           <div>
-            <img className="w-100 banner__img z-index-41" src="img/LandingPageHero__path.png" alt="" />
+            <img
+              className="w-100 banner__img z-index-41"
+              src="img/LandingPageHero__path.png"
+              alt=""
+            />
           </div>
           <div className="content__text__banner">
             <h1>You'll never travel without our trip planner again</h1>

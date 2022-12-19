@@ -28,17 +28,20 @@
     border-bottom: 1px solid #e9ecef;
     padding-bottom: 35px;
 }
+
 .title-text-innestorz {
     font-weight: 700;
     font-size: 16px;
     position: relative;
 }
+
 .bg-before {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
     padding: 0;
 }
+
 .bg-before::before {
     content: "";
     position: absolute;
@@ -48,4 +51,10 @@
     height: 95%;
     background-color: #e9ecef;
     z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .box__reponsive__investors {
+        width: 100%;
+    }
 }

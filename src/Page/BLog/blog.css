@@ -3,7 +3,7 @@
     padding-top: 43px;
     margin-top: 73px;
     transition: all 0.4s;
-    background-color: #dfdfdf;
+    background-color: #fff;
 }
 
 .section-title h2 {
@@ -21,6 +21,6 @@
     text-transform: capitalize;
 }
 
-.card-block{
+.card-block {
     border: 1px solid #dfdfdf;
 }

@@ -72,7 +72,9 @@ const Guides = () => {
       </section>
       <section>
         <div className="container mb-5">
-          <h2 className="fw-700 mb-3 line-height-1 letter-spacing-3 fs-24">Or browse our destinations with the most guides</h2>
+          <h2 className="fw-700 mb-3 line-height-1 letter-spacing-3 fs-24">
+            Or browse our destinations with the most guides
+          </h2>
           <span className="d-inline-block ms-2 mt-2 mb-2">
             <Link className="btn__city Button__md Button__light-gray">
               San Francisco

@@ -1,7 +1,7 @@
 import React from "react";
 import "./allstories.css";
 import { Link } from "react-router-dom";
-import {RiBookReadLine} from "react-icons/ri";
+import { RiBookReadLine } from "react-icons/ri";
 
 const AllStories = () => {
   return (
@@ -36,7 +36,7 @@ const AllStories = () => {
                   </div>
                 </div>
                 <div>
-                    <RiBookReadLine />
+                  <RiBookReadLine />
                 </div>
               </div>
             </div>

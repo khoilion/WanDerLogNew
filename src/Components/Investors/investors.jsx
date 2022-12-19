@@ -6,10 +6,10 @@ const Investors = () => {
   return (
     <div className="investors">
       <div className="container">
-        <div className="row align-items-center line-investors">
-          <div className="col-3">
+        <div className="row align-items-center line-investors justify-content-center">
+          <div className="col-3 box__reponsive__investors">
             <div className="text-investors">
-              <div className="bg-before position-relative">
+              <div className="bg-before position-relative bg-before-reponsive">
                 <cite>From the creators of</cite>
               </div>
               <Link
@@ -27,7 +27,7 @@ const Investors = () => {
           </div>
           <div className="col-9">
             <div className="row align-items-center">
-              <div className="bg-before position-relative">
+              <div className="bg-before position-relative bg-before-reponsive">
                 <cite>As featured in</cite>
               </div>
               <div className="col-3">

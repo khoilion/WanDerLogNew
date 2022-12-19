@@ -9,10 +9,12 @@
 .w-230 {
     width: 230px;
 }
+
 .banner__img {
     position: absolute;
     top: 0;
 }
+
 .content__text__banner {
     position: absolute;
     top: 50%;
@@ -41,8 +43,8 @@
 /* ========================================== */
 .box__show__gettheapp {
     position: absolute;
-    left: -15%;
-    top: 15%;
+    left: 0%;
+    top: 100%;
     background: #fff;
     border-color: #dee2e6;
     padding: 16px !important;

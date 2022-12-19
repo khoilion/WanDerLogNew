@@ -45,3 +45,38 @@
     text-align: center;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .plan__no__connection h2 {
+        font-size: 16px;
+    }
+    .plan__no__connection p {
+        font-size: 10px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .plan__no__connection  {
+        width: 100%;
+        top: -175%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .plan__no__connection  {
+        width: 100%;
+        top: -300%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .reponsive__box__mobileapp {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

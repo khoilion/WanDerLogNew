@@ -6,11 +6,11 @@ const ItineraryMap = () => {
     <div className="itinerarymap">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-6">
-            <img src="img/LandingPageMapAnimation__map.png" alt="" />
+          <div className="col-12 col-md-7 px-4 ">
+            <img className="w-100" src="img/LandingPageMapAnimation__map.png" alt="" />
           </div>
-          <div className="col-6">
-            <div className="me-5 pe-5">
+          <div className="col-md-5">
+            <div className="text__content__itinerary">
               <h2 className="fw-700">
                 Your itinerary and your map in one view
               </h2>

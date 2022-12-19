@@ -66,7 +66,7 @@ const mobileApp = () => {
       <section className="section__content__connection container-fixed-padding">
         <div className="container">
           <div className="position-relative">
-            <img src="img/MobileLandingPage__plansWithYou.png" alt="" />
+            <img className="w-100" src="img/MobileLandingPage__plansWithYou.png" alt="" />
             <div className="plan__no__connection row col-4 offset-4 position-absolute t-0">
               <h2>Take your plans with you, even without a connection</h2>
               <p>

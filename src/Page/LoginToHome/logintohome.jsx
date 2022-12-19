@@ -18,13 +18,6 @@ import { IoMdShareAlt } from "react-icons/io";
 import CpmRecent from "../Guides/CpnBoxRecentGuides/cpmrecent";
 
 const { RangePicker } = DatePicker;
-// const handleChange = (value) => {
-//   console.log(`selected ${value}`);
-// };
-// const [showModalBookRoom, setShowModalBookRoom] = useState(false);
-// const handleChangeModalBookRoom = () => {
-//   setShowModalBookRoom(!showModalBookRoom);
-// };
 
 const Logintohome = () => {
   const [showModalBookRoom, setShowModalBookRoom] = useState(false); // tạo state để show modal
@@ -68,12 +61,12 @@ const Logintohome = () => {
   return (
     <div className="home___login">
       <section className="container">
-        <div className="d-flex align-items-center justify-content-between pt-3 pb-3">
-          <div>
-            <h1>Recently viewed and upcoming</h1> 
+        <div className="row d-flex align-items-center justify-content-between pt-3 pb-3">
+          <div className="col-md-10">
+            <h1>Recently viewed and upcoming</h1>
           </div>
-          <div className=" btn-start">
-            <Link to="/createplan" className="d-flex align-items-center">
+          <div className=" btn-start col-md-2">
+            <Link to="/createplan" className="d-flex align-items-center justify-content-center">
               <div>Plan new trip</div>
             </Link>
           </div>
@@ -82,7 +75,7 @@ const Logintohome = () => {
           <img src="img/img_focus.jpg" alt="" />
           <p>Spain Guide</p>
           <div className="d-flex">
-            <div className="d-flex align-items-center me-4"> 
+            <div className="d-flex align-items-center me-4">
               <div>
                 <AiOutlineHeart />
               </div>
@@ -100,7 +93,7 @@ const Logintohome = () => {
       <section className="home__page__inner">
         <div className="container">
           <div className="row">
-            <div className="col-8">
+            <div className="col-8 reponsive__logintohome">
               <div className="text__content__homeinner">
                 Need a place to stay?
               </div>
@@ -224,7 +217,10 @@ const Logintohome = () => {
                       </div>
                       <div className="d-flex justify-content-end mt-4">
                         <div>
-                          <button onClick={handleChangeModalBookRoom} className="me-3 button__cancel__save button__flat__secondary">
+                          <button
+                            onClick={handleChangeModalBookRoom}
+                            className="me-3 button__cancel__save button__flat__secondary"
+                          >
                             Cancel
                           </button>
                         </div>
@@ -256,7 +252,7 @@ const Logintohome = () => {
       </section>
       <section className="container">
         <iframe
-        title="map"
+          title="map"
           className="mt-5 mt-5 mb-5 iframe__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.98839009503!2d105.8194540736697!3d21.022738704089598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1670213209005!5m2!1svi!2s"
           loading="lazy"
@@ -264,7 +260,7 @@ const Logintohome = () => {
       </section>
       <section className="container">
         <div className="row mt-5 mb-5">
-          <div className="col-6">
+          <div className="col-6 reponsive__box__mobileapp">
             <div className="HomePageInner__yourTripsAndGuides">
               <div className="d-flex justify-content-between mb-4">
                 <div className="fs-24 fw-700">Your trips</div>
@@ -285,7 +281,7 @@ const Logintohome = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 reponsive__box__mobileapp">
             <div className="HomePageInner__yourTripsAndGuides">
               <div className="d-flex justify-content-between mb-4">
                 <div className="fs-24 fw-700">Your guides</div>
@@ -362,8 +358,6 @@ const Logintohome = () => {
         <div className="fw-700 fs-36 mb-4">Explore</div>
         <div className="fs-24 fw-700 mb-3">Popular destinations</div>
         <div className="d-flex mb-4">
-          <CpmRecent />
-          <CpmRecent />
           <CpmRecent />
         </div>
       </section>
