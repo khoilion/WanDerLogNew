@@ -32,3 +32,9 @@
 .line-landing {
     border-bottom: 1px solid #e9ecef;
 }
+
+@media screen and (max-width: 426px) {
+    .reponsive__landing {
+        margin-top: 20px;
+    }
+}

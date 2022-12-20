@@ -1,6 +1,7 @@
 import React from "react";
 import "./planlike.css";
 import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const Planlike = () => {
   return (
@@ -21,11 +22,13 @@ const Planlike = () => {
             <div className="col-sm-6 col-lg-4 text-center">
               <div className="row align-items-center">
                 <div className="col-5 col-sm-12">
-                  <img
-                    className="w-100"
-                    src="img/LandingPageProFeatureTiles__offline-1.png"
-                    alt=""
-                  />
+                  <Fade bottom>
+                    <img
+                      className="w-100"
+                      src="img/LandingPageProFeatureTiles__offline-1.png"
+                      alt=""
+                    />
+                  </Fade>
                 </div>
                 <div className="col-7 col-sm-12 text__reponsive__planlike">
                   <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
@@ -41,11 +44,13 @@ const Planlike = () => {
             <div className="col-sm-6 col-lg-4 text-center">
               <div className="row align-items-center">
                 <div className="col-5 col-sm-12">
-                  <img
-                    className="w-100"
-                    src="img/LandingPageProFeatureTiles__attachments-2.png"
-                    alt=""
-                  />
+                  <Fade bottom>
+                    <img
+                      className="w-100"
+                      src="img/LandingPageProFeatureTiles__attachments-2.png"
+                      alt=""
+                    />
+                  </Fade>
                 </div>
                 <div className="col-7 col-sm-12 text__reponsive__planlike">
                   <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">
@@ -61,11 +66,13 @@ const Planlike = () => {
             <div className="col-sm-6 col-lg-4 text-center">
               <div className="row align-items-center">
                 <div className="col-5 col-sm-12">
-                  <img
-                    className="w-100"
-                    src="img/LandingPageProFeatureTiles__optimize-3.png"
-                    alt=""
-                  />
+                  <Fade bottom>
+                    <img
+                      className="w-100"
+                      src="img/LandingPageProFeatureTiles__optimize-3.png"
+                      alt=""
+                    />
+                  </Fade>
                 </div>
                 <div className="col-7 col-sm-12 text__reponsive__planlike">
                   <h3 className="pt-3 fs-22 fw-700 letter-spacing-3">

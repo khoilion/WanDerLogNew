@@ -26,7 +26,7 @@ const Investors = () => {
             </div>
           </div>
           <div className="col-9">
-            <div className="row align-items-center">
+            <div className="row align-items-center justify-content-around">
               <div className="bg-before position-relative bg-before-reponsive">
                 <cite>As featured in</cite>
               </div>
@@ -57,7 +57,7 @@ const Investors = () => {
                   />
                 </Link>
               </div>
-              <div className="col-3">
+              <div className="col-3 reponsive__box__investors">
                 <Link to="/">
                   <img
                     className="w-100 h__50"

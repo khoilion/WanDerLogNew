@@ -50,3 +50,23 @@
         padding-top: 30px;
     }
 }
+
+@media screen and (min-width: 427px) {
+    .reponsive_planon_2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+   .reponsive__img__planon {
+    display: flex;
+    align-items: end;
+   }
+   .reponsive__planon {
+    display: none;
+   }
+   .reponsive_planon_2 {
+    text-align: center;
+    background: #fff;
+   }
+}

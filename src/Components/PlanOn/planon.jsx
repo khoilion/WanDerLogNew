@@ -24,7 +24,7 @@ const Planon = () => {
                     offline.
                   </p>
                 </div>
-                <div className="pt-2">
+                <div className="pt-2 reponsive__planon">
                   <span>
                     <img className="h-40" src="img/AppBadge__ios.png" alt="" />
                   </span>
@@ -60,7 +60,7 @@ const Planon = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 reponsive__img__planon">
               <div className="telephone__img__planon">
                 <img
                   className="w-100"
@@ -69,6 +69,18 @@ const Planon = () => {
                 />
               </div>
             </div>
+            <div className="pt-2 reponsive_planon_2">
+                  <span>
+                    <img className="h-40" src="img/AppBadge__ios.png" alt="" />
+                  </span>
+                  <span>
+                    <img
+                      className="h-40"
+                      src="img/AppBadge__android.png"
+                      alt=""
+                    />
+                  </span>
+                </div>
           </div>
         </div>
       </div>

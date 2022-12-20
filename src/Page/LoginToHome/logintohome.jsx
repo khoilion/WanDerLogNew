@@ -66,7 +66,10 @@ const Logintohome = () => {
             <h1>Recently viewed and upcoming</h1>
           </div>
           <div className=" btn-start col-md-2">
-            <Link to="/createplan" className="d-flex align-items-center justify-content-center">
+            <Link
+              to="/createplan"
+              className="d-flex align-items-center justify-content-center"
+            >
               <div>Plan new trip</div>
             </Link>
           </div>

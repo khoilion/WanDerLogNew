@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import "./featurestools.css";
 
 const FeaturesTools = () => {
@@ -16,11 +17,13 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12 ">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__addPlaces.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__addPlaces.png"
+                        alt=""
+                      />
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">
@@ -36,11 +39,14 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12 ">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__collaborate.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      {" "}
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__collaborate.png"
+                        alt=""
+                      />{" "}
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">
@@ -56,11 +62,13 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__import.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__import.png"
+                        alt=""
+                      />
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">
@@ -76,11 +84,13 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__optimizeRoute.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__optimizeRoute.png"
+                        alt=""
+                      />
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">
@@ -96,11 +106,13 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__recommendations.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__recommendations.png"
+                        alt=""
+                      />
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">
@@ -116,11 +128,13 @@ const FeaturesTools = () => {
               <div className="col-sm-6 col-lg-4">
                 <div className="row">
                   <div className="col-5 col-sm-12">
-                    <img
-                      className="w-100 img__reponsive"
-                      src="img/MainFeatureTiles__export.png"
-                      alt=""
-                    />
+                    <Fade bottom>
+                      <img
+                        className="w-100 img__reponsive"
+                        src="img/MainFeatureTiles__export.png"
+                        alt=""
+                      />
+                    </Fade>
                   </div>
                   <div className="col-7 col-sm-12 text__st">
                     <h3 className="fs-22 letter-spacing-3 pt-3">

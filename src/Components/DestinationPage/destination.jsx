@@ -1,6 +1,7 @@
 import React from "react";
 import "./destination.css";
 import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const Destination = () => {
   return (
@@ -22,11 +23,15 @@ const Destination = () => {
           <div className="row">
             <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
-                <img
-                  className="img__slideShow"
-                  src="img/img-slideShow-1.jpg"
-                  alt=""
-                />
+                <Fade bottom>
+                  {" "}
+                  <img
+                    className="img__slideShow"
+                    src="img/img-slideShow-1.jpg"
+                    alt=""
+                  />
+                </Fade>
+
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
                   <span className="fs-24 fw-700 letter-spacing-3">
                     San Francisco Neighborhood Guide
@@ -54,11 +59,14 @@ const Destination = () => {
             </div>
             <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
-                <img
-                  className="img__slideShow"
-                  src="img/img-slideShow-1.jpg"
-                  alt=""
-                />
+                <Fade bottom>
+                  <img
+                    className="img__slideShow"
+                    src="img/img-slideShow-1.jpg"
+                    alt=""
+                  />
+                </Fade>
+
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
                   <span className="fs-24 fw-700 letter-spacing-3">
                     San Francisco Neighborhood Guide
@@ -86,11 +94,14 @@ const Destination = () => {
             </div>
             <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
-                <img
-                  className="img__slideShow"
-                  src="img/img-slideShow-1.jpg"
-                  alt=""
-                />
+                <Fade bottom>
+                  <img
+                    className="img__slideShow"
+                    src="img/img-slideShow-1.jpg"
+                    alt=""
+                  />
+                </Fade>
+
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
                   <span className="fs-24 fw-700 letter-spacing-3">
                     San Francisco Neighborhood Guide
@@ -118,11 +129,14 @@ const Destination = () => {
             </div>
             <div className="col-3 box__reponsive__destination">
               <div className="position-relative overflow-hidden hover-room-image boder-radius-12">
-                <img
-                  className="img__slideShow"
-                  src="img/img-slideShow-1.jpg"
-                  alt=""
-                />
+                <Fade bottom>
+                  <img
+                    className="img__slideShow"
+                    src="img/img-slideShow-1.jpg"
+                    alt=""
+                  />
+                </Fade>
+
                 <div className="text-white p-3 position-absolute account__slideShow text-start ">
                   <span className="fs-24 fw-700 letter-spacing-3">
                     San Francisco Neighborhood Guide

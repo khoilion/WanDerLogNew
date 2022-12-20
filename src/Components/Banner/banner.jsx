@@ -3,6 +3,7 @@ import "./banner.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import PlanYourTrip from "../PlanYourTrip/planyourtrip";
 
 const Banner = () => {
   const [showDropdownGetTheApp, setShowDropdownGetTheApp] = useState(false);
@@ -35,6 +36,10 @@ const Banner = () => {
               alt=""
             />
           </div>
+        </div>
+        <div className="container">
+        <div className="row reponsive_textcontent_banner">
+          <div className="col-6">
           <div className="content__text__banner">
             <h1>You'll never travel without our trip planner again</h1>
             <p>
@@ -108,7 +113,15 @@ const Banner = () => {
               </div>
             </div>
           </div>
+          </div>
+          <div className="col-6">
+
+          </div>
         </div>
+        </div>
+      </div>
+      <div className="reponsive__components__banner">
+        <PlanYourTrip />
       </div>
     </>
   );

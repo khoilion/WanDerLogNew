@@ -20,7 +20,7 @@ const LandingPageInner = () => {
           </div>
           <div className="line-landing">
             <div className="row py-5">
-              <div className="col-4">
+              <div className="col-md-4 reponsive__landing">
                 <h3 className="planner mb-3">
                   The best
                   <Link className="destination" to="/drive">
@@ -35,7 +35,7 @@ const LandingPageInner = () => {
                   to visit.
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 reponsive__landing">
                 <h3 className="planner mb-3">The best vacation planner</h3>
                 <div className="text-muted">
                   Use Wanderlog to map your journey to figure out the best
@@ -44,7 +44,7 @@ const LandingPageInner = () => {
                   websites.
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 reponsive__landing">
                 <h3 className="planner mb-3">
                   The best group itinerary planner
                 </h3>

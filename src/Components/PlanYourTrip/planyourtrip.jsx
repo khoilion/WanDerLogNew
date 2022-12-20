@@ -9,7 +9,7 @@ const PlanYourTrip = () => {
         <div className="container">
           <div className="title-plan-trip">
             <h2>Ready to plan your trip in half the time?</h2>
-            <div className="d-flex justify-content-center pt-4 align-items-center">
+            <div className="d-flex justify-content-center pt-4 align-items-center box__reponsive__plan">
               <div className=" btn btn-start">
                 <Link to="/createplan">Start planning</Link>
               </div>
